@@ -1,0 +1,13 @@
+package co.grandcircus.WeatherAPI;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class WeatherResponse {
+	
+	private String type;
+	
+	@JsonProperty("text")
+	private WeatherValue weatherValues;
+	
+
+}

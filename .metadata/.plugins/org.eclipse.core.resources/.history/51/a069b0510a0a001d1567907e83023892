@@ -1,0 +1,17 @@
+package co.grandcircus.WeatherAPI;
+
+import java.util.List;
+
+//Start at innermost value to avoid errors
+//No annotation required
+public class WeatherValue {
+
+	private String areaDescription;
+	private String currentObservationName;
+	private String currentObservationDate;
+	private String currentObersvationTemp;
+	private List<String> weatherText;
+	
+	
+	
+}
