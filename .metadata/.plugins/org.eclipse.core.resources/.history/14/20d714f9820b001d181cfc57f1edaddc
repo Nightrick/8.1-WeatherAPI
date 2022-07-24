@@ -1,0 +1,63 @@
+package co.grandcircus.WeatherAPI;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import Model.Time;
+
+public class WeatherResponse {
+	
+	@JsonProperty("time")
+	private Time time;
+	
+	@JsonProperty("location")
+	private WeatherLocation location;
+	
+	@JsonProperty("currentobservation")
+	private CurrentObservation currentObservation;
+	
+	@JsonProperty("text")
+	private WeatherValue weatherValues;
+	
+	@JsonProperty("data")
+	private Data data;
+	
+	public Time getTime() {
+		return time;
+	}
+
+	public void setTime(Time time) {
+		this.time = time;
+	}
+
+	public Location getLocation() {
+		return location;
+	}
+
+	public void setLocation(Location location) {
+		this.location = location;
+	}
+
+	public CurrentObservation getCurrentObservation() {
+		return currentObservation;
+	}
+
+	public void setCurrentObservation(CurrentObservation currentObservation) {
+		this.currentObservation = currentObservation;
+	}
+
+	public Data getData() {
+		return data;
+	}
+
+	public void setData(Data data) {
+		this.data = data;
+	}
+
+	public WeatherValue getWeatherValues() {
+		return weatherValues;
+	}
+
+	public void setWeatherValues(WeatherValue weatherValues) {
+		this.weatherValues = weatherValues;
+	}
+}

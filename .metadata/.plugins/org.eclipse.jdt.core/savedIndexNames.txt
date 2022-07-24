@@ -5,7 +5,6 @@ INDEX VERSION 1.131+C:\Users\Dj\Desktop\GrandCircusLabs\8.1-WeatherAPI\.metadata
 865788990.index
 2317739201.index
 610047925.index
-1440452989.index
 1217013400.index
 3991152524.index
 3743067975.index

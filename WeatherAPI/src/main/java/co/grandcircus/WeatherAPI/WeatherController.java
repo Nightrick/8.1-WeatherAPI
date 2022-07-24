@@ -13,7 +13,12 @@ public class WeatherController {
 	
 	@RequestMapping("/")
 	public String homePage(Model model) {
-		model.addAttribute("weather", weatherService.getWeather());
+		model.addAttribute("location", weatherService.getAreaDescription());
+		model.addAttribute("time", weatherService.getTimeStart());
+		model.addAttribute("data", weatherService.getTimeDataText());
+		model.addAttribute("observationName", weatherService.getCurrentObservationName());
+		model.addAttribute("observationTemp", weatherService.getCurrentObservationTemp());
+		model.addAttribute("observationDewp", weatherService.getCurrentObservationDewp());
 		return "home";
 	}
 
